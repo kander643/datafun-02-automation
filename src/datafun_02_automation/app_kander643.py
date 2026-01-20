@@ -1,6 +1,6 @@
-"""app_yourname.py - Project script.
+"""app_kander643.py - Project script.
 
-Author: Your Name or Alias
+Author: Kim Melso
 Date: 2026-01
 
 Practice key Python skills:
@@ -19,16 +19,7 @@ Practice key Python skills:
 OBS:
   This is your file to practice and customize.
   Find the TODO comments, and as you complete each task, remove the TODO note.
-  TODO: Make all your files start with your name or alias in the filename
 
-TODO: Change the Author line of the docstring above to your name or alias.
-
-TODO: RENAME this file from app_yourname.py to something
-      that includes your name or alias, e.g., app_stellar_analytics.py.
-
-TODO: Update the opening line of the docstring above to match the new file name.
-
-TODO: Update the associated `uv run python` command in the README.md file.
 """
 
 
@@ -85,11 +76,7 @@ def write_text_file(path: Path, content: str) -> None:
 
 
 def create_files_from_numeric_range() -> None:
-    # TODO: Create a file for each year in the range 2023 to 2026 inclusive.
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
-    """Create one file per quarter for a given inclusive quarter range.
+    """Create one file per year for a given inclusive year range.
 
     Arguments: None
 
@@ -99,24 +86,24 @@ def create_files_from_numeric_range() -> None:
     LOG.info("START FUNCTION 1: create_files_from_numeric_range()")
 
     # Define a variable for the start
-    start_quarter: int = 1
+    start_year: int = 2023
     # Define a variable for the end
-    end_quarter: int = 4
+    end_year: int = 2026
 
     # LOG the starting name and value
-    LOG.info(f"Starting quarter: {start_quarter}")
+    LOG.info(f"Starting year: {start_year}")
 
     # LOG the ending name and value
-    LOG.info(f"Ending quarter: {end_quarter}")
+    LOG.info(f"Ending year: {end_year}")
 
     # For each number in the range (add one to the end to be INCLUSIVE)
-    for quarter_number in range(start_quarter, end_quarter + 1):
-        # Define a filename that starts with my name and uses the quarter number
-        filename: str = f"case_quarter_{quarter_number}.txt"
+    for year_number in range(start_year, end_year + 1):
+        # Define a filename that starts with my name and uses the year number
+        filename: str = f"kander643_year_{year_number}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my report for quarter number: {quarter_number}\n"
+        content: str = f"Here is my grades data for year number: {year_number}\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -125,10 +112,6 @@ def create_files_from_numeric_range() -> None:
 
 
 def create_files_from_list() -> None:
-    # TODO: Create a file for each item in a list (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
     """Create files based on a list of pet names.
 
     Arguments: None
@@ -137,20 +120,20 @@ def create_files_from_list() -> None:
     # Log the start of this function
     LOG.info("START FUNCTION 2: create_files_from_list()")
 
-    # Define a pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
+    # Define a color list
+    color_list: list[str] = ["blue", "green", "yellow", "red"]
 
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Log my color list
+    LOG.info(f"Color list ={color_list}")
 
-    # For each pet name in the pet list (must have a colon and indentation matters!)
-    for pet_name in pet_list:
-        # Define a filename that starts with my name and uses this pet name
-        filename: str = f"case_{pet_name}.txt"
+    # For each color name in the color list (must have a colon and indentation matters!)
+    for color_name in color_list:
+        # Define a filename that starts with my name and uses this color name
+        filename: str = f"kander643_{color_name}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is my pet data for pet: '{pet_name}'\n"
+        content: str = f"Here is my color information for the color: '{color_name}'\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -189,7 +172,7 @@ def create_files_using_list_comprehension() -> None:
     # For each favorite name in the new favorite list
     for favorite in favorite_list:
         # Define a file name that starts with my name and uses this favorite name
-        filename: str = f"case_{favorite}.txt"
+        filename: str = f"kander643{favorite}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
