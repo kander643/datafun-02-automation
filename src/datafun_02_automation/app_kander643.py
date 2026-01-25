@@ -142,14 +142,8 @@ def create_files_from_list() -> None:
 
 
 def create_files_using_list_comprehension() -> None:
-    # TODO: Create a file for each item in a new list you transformed USING A LIST COMPREHENSION (do not use pets).
-    # TODO: Change the docstring, variable names, code, and log messages accordingly.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
     """Create files by transforming names using list comprehension.
-
     Arguments: None
-
     Returns: None
     """
     # Log the start of this function
@@ -158,25 +152,25 @@ def create_files_using_list_comprehension() -> None:
     LOG.info("WHY: They are super compact list transformations.")
     LOG.info("Read it as <do this logic> FOR each <item> IN <list>.")
 
-    # Define my pet list
-    pet_list: list[str] = ["dog", "cat", "fish"]
-    # Log my pet list
-    LOG.info(f"Pet list ={pet_list}")
+    # Define my food list
+    food_list: list[str] = ["tacos", "bbq", "sandwiches"]
+    # Log my food list
+    LOG.info(f"Food list ={food_list}")
 
     # Define a prefix (or any other transformation logic)
-    prefix = "favorite_"
+    prefix = "recipe_"
 
-    # Use list comprehension syntax to create a new list from the pet list
-    favorite_list: list[str] = [f"{prefix}{name}" for name in pet_list]
+    # Use list comprehension syntax to create a new list from the food list
+    recipe_list: list[str] = [f"{prefix}{name}" for name in food_list]
 
     # For each favorite name in the new favorite list
-    for favorite in favorite_list:
+    for recipe in recipe_list:
         # Define a file name that starts with my name and uses this favorite name
-        filename: str = f"kander643{favorite}.txt"
+        filename: str = f"kander643{recipe}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"Here is the special data about my '{favorite}'\n"
+        content: str = f"Here is the ingredients and directions for my '{recipe}'\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -185,11 +179,7 @@ def create_files_using_list_comprehension() -> None:
 
 
 def create_files_periodically() -> None:
-    # TODO: Create at least 5 files and less than 25 files with a delay between each creation.
-    # TODO: Change the filename format to start with your name or alias.
-    # TODO: Customize the content of each created file.
     """Create a small number of files with a delay between each creation.
-
     Arguments: None
     Returns:   None
     """
@@ -198,9 +188,9 @@ def create_files_periodically() -> None:
     LOG.info("WHY: Use while loop for REPETITIVE tasks with a WAIT or DELAY.")
 
     # Define wait_seconds: Seconds to wait between file writes.
-    wait_seconds: int = 1
+    wait_seconds: int = 2
     # Define count: How many files to create.
-    count: int = 3
+    count: int = 8
 
     # Log the wait_seconds
     LOG.info(f"Waiting seconds between files: {wait_seconds}")
@@ -208,17 +198,17 @@ def create_files_periodically() -> None:
     LOG.info(f"Number of files to create: {count}")
 
     # Define a counter variable
-    i: int = 1
+    k: int = 1
 
     # While the counter is less than or equal to the count
-    while i <= count:
+    while k <= count:
         # Define a filename that starts with my name and uses the counter
         # Use 02d formatting for leading zeros and two digits
-        filename: str = f"case_{i:02d}.txt"
+        filename: str = f"kander643_{k:02d}.txt"
         # Define the path for my new file
         path: Path = ROOT_DIR / filename
         # Define some content to put in the new file
-        content: str = f"If we accidentally make an infinite loop, this will go forever... We're on file count:  {i}\n"
+        content: str = f"This file will trigger the creation of another file... and another... and another...:  {k}\n"
         # Call the provided helper function to write the file and log it
         write_text_file(path, content)
 
@@ -228,8 +218,8 @@ def create_files_periodically() -> None:
         # Call the time.sleep() function to wait for the given number of wait_seconds
         time.sleep(wait_seconds)
         # IMPORTANT: Remember to increment the counter variable to avoid an infinite loop!
-        # Set the value of i to itself plus one (this is the same as i = i + 1)
-        i += 1
+        # Set the value of k to itself plus one (this is the same as k = k + 1)
+        k = k + 1
 
 
 # === DEFINE THE MAIN FUNCTION ===

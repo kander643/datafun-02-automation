@@ -1,0 +1,1 @@
+Here is my color information for the color: 'red'

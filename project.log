@@ -118,3 +118,54 @@
 2026-01-19 21:24:04 | INFO | P02 | WROTE file: case_03.txt
 2026-01-19 21:24:04 | INFO | P02 | Waiting 1 seconds...
 2026-01-19 21:24:05 | INFO | P02 | END main()
+2026-01-19 22:01:34 | INFO | P02 | === RUN START ===
+2026-01-19 22:01:34 | INFO | P02 | project=Automation: Creating Files with Repetition Patterns
+2026-01-19 22:01:34 | INFO | P02 | repo_dir=datafun-02-automation
+2026-01-19 22:01:34 | INFO | P02 | python=3.14.2
+2026-01-19 22:01:34 | INFO | P02 | os=Windows 10
+2026-01-19 22:01:34 | INFO | P02 | shell=powershell
+2026-01-19 22:01:34 | INFO | P02 | cwd=.
+2026-01-19 22:01:34 | INFO | P02 | github_actions=False
+2026-01-19 22:01:34 | INFO | P02 | START main()
+2026-01-19 22:01:34 | INFO | P02 | START FUNCTION 1: create_files_from_numeric_range()
+2026-01-19 22:01:34 | INFO | P02 | Starting year: 2023
+2026-01-19 22:01:34 | INFO | P02 | Ending year: 2026
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_year_2023.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_year_2024.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_year_2025.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_year_2026.txt
+2026-01-19 22:01:34 | INFO | P02 | START FUNCTION 2: create_files_from_list()
+2026-01-19 22:01:34 | INFO | P02 | Color list =['blue', 'green', 'yellow', 'red']
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_blue.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_green.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_yellow.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_red.txt
+2026-01-19 22:01:34 | INFO | P02 | START FUNCTION 3: create_files_using_list_comprehension()
+2026-01-19 22:01:34 | INFO | P02 | WHY: Use list comprehension to TRANSFORM a list into a new list.
+2026-01-19 22:01:34 | INFO | P02 | WHY: They are super compact list transformations.
+2026-01-19 22:01:34 | INFO | P02 | Read it as <do this logic> FOR each <item> IN <list>.
+2026-01-19 22:01:34 | INFO | P02 | Food list =['tacos', 'bbq', 'sandwiches']
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643recipe_tacos.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643recipe_bbq.txt
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643recipe_sandwiches.txt
+2026-01-19 22:01:34 | INFO | P02 | START FUNCTION 4: create_files_periodically()
+2026-01-19 22:01:34 | INFO | P02 | WHY: Use while loop for REPETITIVE tasks with a WAIT or DELAY.
+2026-01-19 22:01:34 | INFO | P02 | Waiting seconds between files: 2
+2026-01-19 22:01:34 | INFO | P02 | Number of files to create: 8
+2026-01-19 22:01:34 | INFO | P02 | WROTE file: kander643_01.txt
+2026-01-19 22:01:34 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:36 | INFO | P02 | WROTE file: kander643_02.txt
+2026-01-19 22:01:36 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:38 | INFO | P02 | WROTE file: kander643_03.txt
+2026-01-19 22:01:38 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:40 | INFO | P02 | WROTE file: kander643_04.txt
+2026-01-19 22:01:40 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:42 | INFO | P02 | WROTE file: kander643_05.txt
+2026-01-19 22:01:42 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:44 | INFO | P02 | WROTE file: kander643_06.txt
+2026-01-19 22:01:44 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:46 | INFO | P02 | WROTE file: kander643_07.txt
+2026-01-19 22:01:46 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:48 | INFO | P02 | WROTE file: kander643_08.txt
+2026-01-19 22:01:48 | INFO | P02 | Waiting 2 seconds...
+2026-01-19 22:01:50 | INFO | P02 | END main()
